@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzii & Suhii</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('suzii_login_ok') !== '1') {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <div class="page">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-mark">S</div>
+                <div class="brand-text">
+                    <div class="title">Suzii & Suhii</div>
+                    <div class="subtitle">A small story page</div>
+                </div>
+            </div>
+
+            <button id="logoutBtn" class="logout">Logout</button>
+        </header>
+
+        <main class="content">
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>Login Successful</h1>
+                    <p class="hero-message">
+                        Some people arrive like a simple "hello"… and become a whole feeling.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill">Suzii</span>
+                        <span class="pill">Suhii</span>
+                        <span class="pill">Instagram</span>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="photo-card">
+                        <img src="https://images.unsplash.com/photo-1516203142227-68f0737765b3?w=900&h=600&fit=crop" alt="Suzii & Suhii romantic moment">
+                        <div class="photo-caption">"Hello bchaa" — our beginning</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid">
+                <article class="card">
+                    <div class="card-header">
+                        <div class="icon">01</div>
+                        <h2>Where we meet</h2>
+                    </div>
+                    <img src="data:image/jpeg;base64,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" alt="Instagram app" class="card-image">
+                    <p>
+                        We met on Instagram. I added randomly a girl named <strong>Suzain</strong>, and after that I started talking to her.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div class="icon">02</div>
+                        <h2>Last 3 days</h2>
+                    </div>
+                    <img src="https://picsum.photos/seed/chatting-messaging-bubbles-conversation/400/200.jpg" alt="Chat conversation bubbles" class="card-image">
+                    <p>
+                        In the last 3 days, our chats felt special. Her nickname is <strong>Suzii</strong> and my nickname is <strong>Suhii</strong>.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div class="icon">03</div>
+                        <h2>About Suzii</h2>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Photo collage memories" class="card-image">
+                    <p>
+                        She is pursuing <strong>Masters in English Literature</strong>. She lives in <strong>Kangan</strong>, but basically she is from <strong>Habakadal, Srinagar</strong>.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div class="icon">04</div>
+                        <h2>What I like</h2>
+                    </div>
+                    <img src="https://t4.ftcdn.net/jpg/02/96/73/23/240_F_296732336_qyH7TguYWbc9tpqoHtPV0sNMoOiAm9AS.jpg" alt="Cute couple" class="card-image">
+                    <p>
+                        Her smile is very cute, she is very tallented, and she has a calm vibe that makes everything feel easy.
+                    </p>
+                </article>
+            </section>
+
+            <section class="retold">
+                <div class="retold-header">
+                    <h2>Retold: Friendship & Love</h2>
+                    <p>A song for our story</p>
+                </div>
+
+                <div class="song-card">
+                    <div class="song-content-center">
+                        <h3>Perfect — Ed Sheeran</h3>
+                        <p class="song-note">A song that feels like destiny, just like us.</p>
+                        
+                        <div class="song-media">
+                            <img src="https://t4.ftcdn.net/jpg/02/96/73/23/240_F_296732336_qyH7TguYWbc9tpqoHtPV0sNMoOiAm9AS.jpg" alt="Happy couple" class="song-image">
+                            <div class="lyrics-box">
+                                <h4>Lyrics</h4>
+                                <pre class="lyrics">I found a love for me
+Darling, just dive right in and follow my lead
+Well, I found a girl, beautiful and sweet
+Oh, I never knew you were the someone waiting for me
+
+'Cause we were just kids when we fell in love
+Not knowing what it was
+I will not give you up this time
+But darling, just kiss me slow, your heart is all I own
+And in your eyes you're holding mine
+
+Baby, I'm dancing in the dark, with you between my arms
+Barefoot on the grass, listening to our favorite song
+When you said you looked a mess, I whispered underneath my breath
+But you heard it, darling, you look perfect tonight</pre>
+                            </div>
+                        </div>
+                        
+                        <audio controls class="audio-player" preload="auto">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </section>
+
+            <section class="retold retold-hindi">
+                <div class="retold-header">
+                    <h2>Hindi Love Dedication</h2>
+                    <p>Ek geet, sirf tumhare naam</p>
+                </div>
+
+                <div class="song-card">
+                    <div class="song-content-center">
+                        <h3>Tum Mere Ho — (Hindi Dedication)</h3>
+                        <p class="song-note">Jab bhi tum muskurati ho, dil ko sukoon milta hai.</p>
+
+                        <div class="song-media">
+                            <img src="https://t4.ftcdn.net/jpg/02/96/73/23/240_F_296732336_qyH7TguYWbc9tpqoHtPV0sNMoOiAm9AS.jpg" alt="Romantic Indian couple" class="song-image">
+                            <div class="lyrics-box">
+                                <h4>Lyrics</h4>
+                                <pre class="lyrics">Tumhari baaton mein ek narmi si hai
+Tumhari aankhon mein roshni si hai
+
+Main jab bhi thak jaaun, tum yaad aao
+Dil ke har kona mein tum hi bas jaao
+
+Humein mile the hum achanak se
+Par lagta hai, jaise pehle se
+
+Suzii tum ho, main Suhii
+Saath chalna hai, yahi sahi
+
+Pyaar ko lafzon ki zaroorat nahi
+Bas ek “hello” se kahaani bani</pre>
+                            </div>
+                        </div>
+
+                        <audio controls class="audio-player" preload="auto">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </section>
+
+            <section class="retold">
+                <div class="retold-header">
+                    <h2>Our First Talks</h2>
+                    <p>When voices met and hearts connected</p>
+                </div>
+
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 26, 11:30 PM</div>
+                        <div class="timeline-content">
+                            <h3>First Call Attempt</h3>
+                            <p>Late night courage led me to call you for the first time. Though you were muted, your chat reply made everything special. That moment felt like the beginning of something beautiful.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 27, 3:30 PM</div>
+                        <div class="timeline-content">
+                            <h3>Her Voice, My World</h3>
+                            <p>You called me back, and for 20 minutes, your voice was everything I imagined and more. Your smile in those words, the way you talked—pure magic. Even though I was busy, every second counted.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 27, 10:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Two Hours of Heaven</h3>
+                            <p>We talked for almost 2 hours—time stood still. Your laughter, your stories, your dreams—I wanted to listen forever. When you said "wait sometime," I waited, believing you'd return.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Until 3:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Waiting with Hope</h3>
+                            <p>I waited until 3 AM, hoping you'd come back. Every notification sound made my heart jump. Finally, I slept with dreams of your voice.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 28, 10:30 AM</div>
+                        <div class="timeline-content">
+                            <h3>Morning Message</h3>
+                            <p>"My battery was dead"—your text came like sunshine after a long night. Suddenly, everything made sense. Sometimes life interrupts, but true connections always find their way back.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="letter">
+                <div class="letter-card">
+                    <h2>A Simple Request</h2>
+                    <p>
+                        Can you share your WhatsApp number? Every chat with you feels like discovering a new favorite song, and I'd love to keep our conversation flowing beyond these screens.
+                    </p>
+                    <div class="signature">— Suhii</div>
+                </div>
+            </section>
+
+            <section class="retold proposal-section">
+                <div class="retold-header">
+                    <h2>A Heart's Proposal</h2>
+                    <p>When words become forever</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="proposal-image">
+                        <img src="https://images.pexels.com/photos/1024989/pexels-photo-1024989.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop" alt="Beautiful romantic couple" class="proposal-couple-img">
+                    </div>
+                    <div class="proposal-content">
+                        <h3>Suzii, Will You...</h3>
+                        <div class="proposal-text">
+                            <p class="proposal-opening">
+                                From a random Instagram add to this sacred moment—every conversation, every laugh, every sleepless night waiting for your message has led me here, to this truth: my heart found its home in you.
+                            </p>
+                            
+                            <p class="proposal-heart">
+                                Your voice became the melody I hum in my dreams, your smile the sunrise I chase every morning, your words the poetry I read when the world feels empty. In a universe full of chaos, you became my sanctuary, my peace, my everything.
+                            </p>
+                            
+                            <p class="proposal-question">
+                                I don't know what destiny wrote in its ancient books, but I know what my soul whispers every time I hear your name. I want to build a world where your laughter echoes in every room, where your dreams become my mission, where your hand finds mine in every season of life, through every storm and every sunshine.
+                            </p>
+                            
+                            <div class="proposal-final">
+                                <h4>Suzii, will you make my story complete?</h4>
+                                <p class="proposal-hope">Will you be my forever, my always, my reason to believe in love again? Will you let me love you the way you deserve to be loved—completely, fiercely, endlessly?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-signature">
+                            <div class="signature-line">Forever yours, with every beat of my heart,</div>
+                            <div class="signature-name">— Suhii</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="letter">
+                <div class="letter-card">
+                    <h2>A beautiful message</h2>
+                    <p>
+                        Suzii, you’re not just a name in my notifications. You’re a soft kind of happiness.
+                        If our story started randomly, maybe it’s because destiny likes surprises.
+                    </p>
+                    <div class="signature">— Suhii</div>
+                </div>
+            </section>
+
+            <section class="letter">
+                <div class="letter-card">
+                    <h2>From My Heart</h2>
+                    <p>
+                        There's something about you that feels different—beautiful in a way words can't capture, unique like a rare melody, impressive in how naturally you touch hearts. When I hear your voice, it's like finding a song I didn't know I was searching for. Your intentions shine through everything you do, pure and genuine, like sunlight breaking through clouds.
+                        
+                        I find myself thinking about our conversations long after they end, replaying your words like favorite verses. There's a warmth in your presence that makes ordinary moments feel extraordinary. Maybe this is how love begins—not with thunder and lightning, but with quiet moments that slowly build into something unbreakable. Or maybe we're creating a bond so rare and precious that it doesn't need a name, just the certainty of being understood.
+                        
+                        Whatever this feeling becomes, I know it's real. And I'm grateful for every moment that brings me closer to understanding just how special you are.
+                    </p>
+                    <div class="signature">— Suhii</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">Made with care for Suzain (Suzii).</div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            sessionStorage.removeItem('suzii_login_ok');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

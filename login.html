@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzain Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <section class="left-panel">
+            <img class="left-image" src="https://picsum.photos/seed/romantic-couple/1200/1600.jpg" alt="Couple">
+            <div class="left-overlay">
+                <div class="left-badge">Suzii & Suhii</div>
+                <h1 class="left-title">A small secret login</h1>
+                <p class="left-quote">"Every love story is beautiful, but ours is my favorite"</p>
+            </div>
+        </section>
+
+        <section class="right-panel">
+            <div class="form-card">
+                <div class="form-head">
+                    <h2>Welcome, Suzain</h2>
+                    <p class="subtitle">Enter your username/email and password</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Username / Email</label>
+                        <input type="email" id="email" name="email" placeholder="Username or email" autocomplete="username" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+
+                <div class="beautiful-message">
+                    <p class="message-text">
+                        "In a world full of temporary things, you are a perpetual feeling that makes my heart skip a beat every time I think about you."
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            const normalizedEmail = email.trim().toLowerCase();
+            const normalizedPassword = password.trim();
+            
+            if (normalizedEmail === 'suhiisuzii12@gmail.com' && normalizedPassword === '789784') {
+                sessionStorage.setItem('suzii_login_ok', '1');
+                window.location.href = '../home.html';
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
