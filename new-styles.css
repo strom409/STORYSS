@@ -3898,6 +3898,261 @@ body {
     }
 }
 
+/* Mobile About Page Sections */
+@media (max-width: 768px) {
+    /* About Hero Section */
+    .about-hero-section {
+        padding: 60px 0;
+    }
+    
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    /* About Main Section */
+    .about-main-section {
+        padding: 60px 0;
+    }
+    
+    .about-card {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-image {
+        order: -1;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .about-intro {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-card {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .info-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .info-text h4 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .info-text p {
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+    
+    .info-detail {
+        font-size: 0.85rem;
+    }
+    
+    /* Qualities Section */
+    .qualities-section {
+        padding: 60px 0;
+    }
+    
+    .qualities-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .quality-card {
+        padding: 30px 25px;
+        text-align: center;
+    }
+    
+    .quality-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .quality-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .quality-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* Family Section */
+    .family-section {
+        padding: 60px 0;
+    }
+    
+    .family-intro {
+        margin-bottom: 40px;
+    }
+    
+    .intro-card {
+        padding: 25px 20px;
+        text-align: center;
+    }
+    
+    .intro-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .intro-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .family-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .family-member-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .member-image {
+        height: 200px;
+    }
+    
+    .member-badge {
+        font-size: 1.5rem;
+    }
+    
+    .member-info h4 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    
+    .member-role {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .member-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Education Journey Section */
+    .education-journey-section {
+        padding: 60px 0;
+    }
+    
+    .journey-intro {
+        margin-bottom: 40px;
+    }
+    
+    .intro-quote {
+        padding: 25px 20px;
+        text-align: center;
+    }
+    
+    .intro-quote p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    .quote-author {
+        font-size: 0.9rem;
+    }
+    
+    .education-timeline {
+        gap: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .timeline-year {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .education-level {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+    
+    .education-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .education-period {
+        font-size: 0.85rem;
+    }
+    
+    .education-achievements {
+        margin-top: 50px;
+    }
+    
+    .education-achievements h3 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievement-card {
+        padding: 25px 20px;
+        text-align: center;
+    }
+    
+    .achievement-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .achievement-card h4 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .achievement-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
 /* Mobile Specific Sections */
 @media (max-width: 768px) {
     /* Story Timeline Section */
@@ -4266,6 +4521,173 @@ body {
         font-size: 0.95rem;
     }
     
+    /* About Hero Section - 480px */
+    .about-hero-section {
+        padding: 50px 0;
+    }
+    
+    .about-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* About Main Section - 480px */
+    .about-main-section {
+        padding: 50px 0;
+    }
+    
+    .about-card {
+        gap: 30px;
+    }
+    
+    .about-image {
+        max-width: 250px;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-intro {
+        font-size: 0.95rem;
+    }
+    
+    .info-card {
+        padding: 15px;
+    }
+    
+    .info-icon {
+        font-size: 1.8rem;
+    }
+    
+    .info-text h4 {
+        font-size: 1.1rem;
+    }
+    
+    .info-text p {
+        font-size: 0.9rem;
+    }
+    
+    /* Qualities Section - 480px */
+    .qualities-section {
+        padding: 50px 0;
+    }
+    
+    .quality-card {
+        padding: 25px 20px;
+    }
+    
+    .quality-icon {
+        font-size: 2.2rem;
+    }
+    
+    .quality-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .quality-card p {
+        font-size: 0.9rem;
+    }
+    
+    /* Family Section - 480px */
+    .family-section {
+        padding: 50px 0;
+    }
+    
+    .intro-card {
+        padding: 20px 15px;
+    }
+    
+    .intro-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .intro-card p {
+        font-size: 0.95rem;
+    }
+    
+    .family-member-card {
+        max-width: 300px;
+    }
+    
+    .member-image {
+        height: 180px;
+    }
+    
+    .member-info h4 {
+        font-size: 1.2rem;
+    }
+    
+    .member-role {
+        font-size: 0.85rem;
+    }
+    
+    .member-description {
+        font-size: 0.85rem;
+    }
+    
+    /* Education Journey Section - 480px */
+    .education-journey-section {
+        padding: 50px 0;
+    }
+    
+    .intro-quote {
+        padding: 20px 15px;
+    }
+    
+    .intro-quote p {
+        font-size: 1rem;
+    }
+    
+    .quote-author {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-year {
+        font-size: 1.8rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .education-level {
+        font-size: 0.9rem;
+    }
+    
+    .education-description {
+        font-size: 0.85rem;
+    }
+    
+    .education-period {
+        font-size: 0.8rem;
+    }
+    
+    .education-achievements h3 {
+        font-size: 1.5rem;
+    }
+    
+    .achievement-card {
+        padding: 20px 15px;
+    }
+    
+    .achievement-icon {
+        font-size: 2.2rem;
+    }
+    
+    .achievement-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .achievement-card p {
+        font-size: 0.85rem;
+    }
+    
     /* Song Dedication Section - 480px */
     .song-dedication-section {
         padding: 50px 0;
@@ -4420,6 +4842,191 @@ body {
     
     .hero-content {
         gap: 20px;
+    }
+    
+    /* About Hero Section - 360px */
+    .about-hero-section {
+        padding: 40px 0;
+    }
+    
+    .about-hero-title {
+        font-size: 2rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* About Main Section - 360px */
+    .about-main-section {
+        padding: 40px 0;
+    }
+    
+    .about-card {
+        gap: 25px;
+    }
+    
+    .about-image {
+        max-width: 220px;
+    }
+    
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .about-intro {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .info-card {
+        padding: 12px;
+    }
+    
+    .info-icon {
+        font-size: 1.5rem;
+    }
+    
+    .info-text h4 {
+        font-size: 1rem;
+    }
+    
+    .info-text p {
+        font-size: 0.85rem;
+    }
+    
+    .info-detail {
+        font-size: 0.8rem;
+    }
+    
+    /* Qualities Section - 360px */
+    .qualities-section {
+        padding: 40px 0;
+    }
+    
+    .quality-card {
+        padding: 20px 15px;
+    }
+    
+    .quality-icon {
+        font-size: 2rem;
+    }
+    
+    .quality-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .quality-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    /* Family Section - 360px */
+    .family-section {
+        padding: 40px 0;
+    }
+    
+    .intro-card {
+        padding: 15px 12px;
+    }
+    
+    .intro-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .intro-card p {
+        font-size: 0.9rem;
+    }
+    
+    .family-member-card {
+        max-width: 280px;
+    }
+    
+    .member-image {
+        height: 160px;
+    }
+    
+    .member-badge {
+        font-size: 1.3rem;
+    }
+    
+    .member-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .member-role {
+        font-size: 0.8rem;
+    }
+    
+    .member-description {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    /* Education Journey Section - 360px */
+    .education-journey-section {
+        padding: 40px 0;
+    }
+    
+    .intro-quote {
+        padding: 15px 12px;
+    }
+    
+    .intro-quote p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .quote-author {
+        font-size: 0.8rem;
+    }
+    
+    .timeline-year {
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .education-level {
+        font-size: 0.85rem;
+    }
+    
+    .education-description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .education-period {
+        font-size: 0.75rem;
+    }
+    
+    .education-achievements {
+        margin-top: 40px;
+    }
+    
+    .education-achievements h3 {
+        font-size: 1.4rem;
+    }
+    
+    .achievement-card {
+        padding: 15px 12px;
+    }
+    
+    .achievement-icon {
+        font-size: 2rem;
+    }
+    
+    .achievement-card h4 {
+        font-size: 1rem;
+    }
+    
+    .achievement-card p {
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
     
     /* Story Timeline Section - 360px */
