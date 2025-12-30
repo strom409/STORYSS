@@ -3900,77 +3900,200 @@ body {
 
 /* Mobile Specific Sections */
 @media (max-width: 768px) {
-    /* About Page */
-    .about-hero {
-        padding: 100px 0 60px;
+    /* Story Timeline Section */
+    .story-timeline-section {
+        padding: 60px 0;
     }
     
-    .about-content {
+    .timeline-container {
+        gap: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .timeline-number {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .timeline-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .timeline-date {
+        font-size: 0.9rem;
+    }
+    
+    /* Song Dedication Section */
+    .song-dedication-section {
+        padding: 60px 0;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .song-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .song-card {
+        padding: 20px;
+    }
+    
+    .song-content h4 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .song-artist {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .song-lyrics p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+    
+    /* Love Letters Section */
+    .love-letters-section {
+        padding: 60px 0;
+    }
+    
+    .letters-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
-    .about-image {
-        order: -1;
+    .letter-card {
+        max-width: 350px;
+        margin: 0 auto;
     }
     
-    .timeline {
-        padding: 30px 20px;
+    .letter-content h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
     }
     
-    .timeline-item {
-        padding: 20px;
+    .letter-content p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
     }
     
-    /* Love Page */
-    .love-hero {
-        padding: 100px 0 60px;
+    .letter-signature {
+        font-size: 0.9rem;
     }
     
-    .love-stats {
+    /* Future Plans Section */
+    .future-plans-section {
+        padding: 60px 0;
+    }
+    
+    .timeline-container {
+        gap: 25px;
+    }
+    
+    .future-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .future-icon {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .future-content h4 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .future-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .future-date {
+        font-size: 0.9rem;
+    }
+    
+    /* Video Messages Section */
+    .video-messages-section {
+        padding: 60px 0;
+    }
+    
+    .video-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .video-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .video-info h4 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .video-description {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    
+    .video-duration {
+        font-size: 0.85rem;
+    }
+    
+    /* Special Moments Section */
+    .special-moments-section {
+        padding: 60px 0;
+    }
+    
+    .moments-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
     
-    .stat-card {
+    .moment-card {
         padding: 25px 20px;
+        text-align: center;
     }
     
-    /* Story Page */
-    .story-hero {
-        padding: 100px 0 60px;
+    .moment-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
     }
     
-    .story-timeline {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .moment-card h4 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     
-    .story-card {
-        padding: 25px 20px;
-    }
-    
-    /* Success Page */
-    .success-hero {
-        padding: 100px 0 60px;
-    }
-    
-    .success-content {
-        padding: 40px 20px;
-    }
-    
-    /* Home Page */
-    .home-hero {
-        padding: 100px 0 60px;
-    }
-    
-    .home-features {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .home-feature {
-        padding: 30px 20px;
+    .moment-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }
 
@@ -4120,6 +4243,129 @@ body {
         text-align: center;
     }
     
+    /* Story Timeline Section - 480px */
+    .story-timeline-section {
+        padding: 50px 0;
+    }
+    
+    .timeline-container {
+        gap: 25px;
+    }
+    
+    .timeline-number {
+        font-size: 1.8rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.95rem;
+    }
+    
+    /* Song Dedication Section - 480px */
+    .song-dedication-section {
+        padding: 50px 0;
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
+    }
+    
+    .song-card {
+        padding: 15px;
+    }
+    
+    .song-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .song-lyrics p {
+        font-size: 0.8rem;
+    }
+    
+    /* Love Letters Section - 480px */
+    .love-letters-section {
+        padding: 50px 0;
+    }
+    
+    .letter-card {
+        max-width: 300px;
+    }
+    
+    .letter-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .letter-content p {
+        font-size: 0.9rem;
+    }
+    
+    /* Future Plans Section - 480px */
+    .future-plans-section {
+        padding: 50px 0;
+    }
+    
+    .future-icon {
+        font-size: 2.2rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .future-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .future-content p {
+        font-size: 0.95rem;
+    }
+    
+    /* Video Messages Section - 480px */
+    .video-messages-section {
+        padding: 50px 0;
+    }
+    
+    .video-card {
+        max-width: 350px;
+    }
+    
+    .video-info h4 {
+        font-size: 1.2rem;
+    }
+    
+    .video-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Special Moments Section - 480px */
+    .special-moments-section {
+        padding: 50px 0;
+    }
+    
+    .moments-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .moment-card {
+        padding: 20px 15px;
+    }
+    
+    .moment-icon {
+        font-size: 1.8rem;
+    }
+    
+    .moment-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .moment-card p {
+        font-size: 0.85rem;
+    }
+    
     .section-title {
         font-size: 1.8rem;
     }
@@ -4174,6 +4420,162 @@ body {
     
     .hero-content {
         gap: 20px;
+    }
+    
+    /* Story Timeline Section - 360px */
+    .story-timeline-section {
+        padding: 40px 0;
+    }
+    
+    .timeline-container {
+        gap: 20px;
+    }
+    
+    .timeline-number {
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Song Dedication Section - 360px */
+    .song-dedication-section {
+        padding: 40px 0;
+    }
+    
+    .category-title {
+        font-size: 1.2rem;
+    }
+    
+    .song-card {
+        padding: 12px;
+    }
+    
+    .song-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .song-artist {
+        font-size: 0.85rem;
+    }
+    
+    .song-lyrics p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+    
+    /* Love Letters Section - 360px */
+    .love-letters-section {
+        padding: 40px 0;
+    }
+    
+    .letters-grid {
+        gap: 20px;
+    }
+    
+    .letter-card {
+        max-width: 280px;
+    }
+    
+    .letter-content h4 {
+        font-size: 1rem;
+    }
+    
+    .letter-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .letter-signature {
+        font-size: 0.8rem;
+    }
+    
+    /* Future Plans Section - 360px */
+    .future-plans-section {
+        padding: 40px 0;
+    }
+    
+    .timeline-container {
+        gap: 20px;
+    }
+    
+    .future-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .future-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .future-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .future-date {
+        font-size: 0.8rem;
+    }
+    
+    /* Video Messages Section - 360px */
+    .video-messages-section {
+        padding: 40px 0;
+    }
+    
+    .video-grid {
+        gap: 20px;
+    }
+    
+    .video-card {
+        max-width: 300px;
+    }
+    
+    .video-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .video-description {
+        font-size: 0.85rem;
+    }
+    
+    .video-duration {
+        font-size: 0.8rem;
+    }
+    
+    /* Special Moments Section - 360px */
+    .special-moments-section {
+        padding: 40px 0;
+    }
+    
+    .moments-grid {
+        gap: 12px;
+    }
+    
+    .moment-card {
+        padding: 15px 12px;
+    }
+    
+    .moment-icon {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .moment-card h4 {
+        font-size: 1rem;
+    }
+    
+    .moment-card p {
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
     
     .section-title {
