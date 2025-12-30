@@ -3599,84 +3599,136 @@ body {
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
+    .navbar {
+        background: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        height: auto !important;
+        min-height: 60px;
+    }
+    
     .nav-container {
-        height: 60px;
+        height: 60px !important;
+        min-height: 60px;
         padding: 0 15px;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav-logo {
+        display: flex !important;
+        align-items: center;
+        gap: 12px;
+        flex: 1;
+    }
+    
+    .logo-icon {
+        font-size: 24px !important;
+        display: block !important;
     }
     
     .logo-text {
-        font-size: 20px;
+        font-size: 18px !important;
+        color: #E91E63;
+        display: block !important;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
     }
     
     .logo-tagline {
-        display: none;
+        display: none !important;
     }
     
     .nav-menu {
         position: fixed;
         top: 60px;
         right: -100%;
-        width: 100%;
+        width: 130px;
         height: calc(100vh - 60px);
         background: white;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        padding: 50px 20px;
-        gap: 20px;
+        align-items: flex-start;
+        padding: 10px 8px;
+        gap: 4px;
         transition: right 0.3s ease;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        overflow-y: auto;
+        display: none;
     }
     
     .nav-menu.active {
         right: 0;
+        display: flex;
     }
     
     .nav-link {
-        font-size: 1.2rem;
-        padding: 15px 30px;
-        border: 2px solid #E91E63;
-        border-radius: 30px;
-        text-align: center;
-        width: 200px;
+        font-size: 0.85rem;
+        padding: 4px 8px;
+        border: 1px solid #E91E63;
+        border-radius: 12px;
+        text-align: left;
+        width: 100%;
+        text-decoration: none;
+        color: #E91E63;
+        transition: all 0.3s ease;
+        margin-bottom: 0;
     }
     
     .nav-link:hover,
     .nav-link.active {
         background: #E91E63;
         color: white;
+        transform: none;
     }
     
     .logout-btn {
-        font-size: 1.2rem;
-        padding: 15px 30px;
-        border: 2px solid #E91E63;
-        border-radius: 30px;
-        text-align: center;
-        width: 200px;
+        font-size: 0.85rem;
+        padding: 4px 8px;
+        border: 1px solid #E91E63;
+        border-radius: 12px;
+        text-align: left;
+        width: 100%;
         background: #E91E63;
         color: white;
         cursor: pointer;
         transition: all 0.3s ease;
+        margin-top: 2px;
     }
     
     .logout-btn:hover {
         background: #C2185B;
-        transform: translateY(-2px);
+        transform: none;
     }
     
     .mobile-menu-toggle {
-        display: block;
-        background: none;
-        border: none;
+        display: flex !important;
+        background: #E91E63;
+        border: 2px solid #E91E63;
+        border-radius: 8px;
         font-size: 1.5rem;
         cursor: pointer;
-        color: #E91E63;
-        padding: 5px;
+        color: white;
+        padding: 8px 12px;
+        transition: all 0.3s ease;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1001;
     }
     
     .mobile-menu-toggle:hover {
-        transform: scale(1.1);
+        background: #C2185B;
+        transform: scale(1.05);
+    }
+    
+    .mobile-menu-toggle span {
+        display: block;
+        font-size: 1.2rem;
     }
 }
 
@@ -4352,6 +4404,17 @@ body {
 /* Mobile Menu Toggle Button */
 .mobile-menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #E91E63;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    transform: scale(1.1);
 }
 
 /* Mobile Animations */
