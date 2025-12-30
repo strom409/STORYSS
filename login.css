@@ -194,9 +194,265 @@ body {
         height: auto;
         grid-template-columns: 1fr;
         padding: 16px 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 16px;
     }
 
     .left-panel {
         min-height: 320px;
+    }
+    
+    .form-card {
+        width: 100%;
+        max-width: none;
+        padding: 30px 25px;
+    }
+    
+    .left-title {
+        font-size: 2rem;
+    }
+    
+    .left-quote {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .login-container {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        max-width: 100%;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .left-panel {
+        min-height: 280px;
+        border-radius: 15px;
+    }
+    
+    .left-overlay {
+        padding: 20px;
+    }
+    
+    .left-title {
+        font-size: 1.8rem;
+    }
+    
+    .left-quote {
+        font-size: 0.95rem;
+        max-width: 40ch;
+    }
+    
+    .right-panel {
+        border-radius: 15px;
+    }
+    
+    .form-card {
+        width: 100%;
+        max-width: none;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+    
+    .form-head h2 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .input-group label {
+        font-size: 0.9rem;
+    }
+    
+    .input-group input {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .login-btn {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    .message-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow: auto;
+    }
+
+    .login-container {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 8px;
+        max-width: 100%;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .left-panel {
+        min-height: 240px;
+        border-radius: 12px;
+    }
+    
+    .left-overlay {
+        padding: 15px;
+    }
+    
+    .left-badge {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .left-title {
+        font-size: 1.5rem;
+        margin-top: 8px;
+    }
+    
+    .left-quote {
+        font-size: 0.85rem;
+        margin-top: 8px;
+        max-width: 35ch;
+    }
+    
+    .right-panel {
+        border-radius: 12px;
+    }
+    
+    .form-card {
+        width: 100%;
+        max-width: none;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+    
+    .form-head h2 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+    
+    .subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-group label {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+    
+    .input-group input {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+    
+    .login-btn {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    
+    .beautiful-message {
+        margin-top: 12px;
+        padding: 10px 12px;
+        border-radius: 8px;
+    }
+    
+    .message-text {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-container {
+        padding: 5px;
+    }
+    
+    .left-panel {
+        min-height: 200px;
+    }
+    
+    .left-overlay {
+        padding: 12px;
+    }
+    
+    .left-title {
+        font-size: 1.3rem;
+    }
+    
+    .left-quote {
+        font-size: 0.8rem;
+    }
+    
+    .form-card {
+        padding: 15px 12px;
+    }
+    
+    .form-head h2 {
+        font-size: 1.2rem;
+    }
+    
+    .subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .input-group input {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .login-btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .message-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    .login-container {
+        padding: 8px;
+    }
+    
+    .left-panel {
+        min-height: 200px;
+    }
+    
+    .form-card {
+        padding: 20px 15px;
+    }
+}
+
+/* Touch-friendly adjustments */
+@media (max-width: 768px) {
+    .login-btn,
+    .input-group input {
+        min-height: 44px;
+    }
+    
+    .login-btn:active {
+        transform: scale(0.98);
     }
 }

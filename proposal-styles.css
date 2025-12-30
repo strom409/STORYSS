@@ -1,0 +1,770 @@
+/* Engagement Ring Section */
+.engagement-ring-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe0f0 50%, #ffd1dc 100%);
+    position: relative;
+}
+
+.engagement-ring-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="ring-pattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><text x="15" y="30" font-family="Arial" font-size="20" fill="%23E91E63" opacity="0.03">💍</text></pattern></defs><rect width="100" height="100" fill="url(%23ring-pattern)"/></svg>');
+    pointer-events: none;
+}
+
+.ring-showcase {
+    margin-top: 40px;
+}
+
+.ring-intro {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.intro-card h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #E91E63;
+    margin-bottom: 15px;
+}
+
+.ring-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.ring-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ring-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ring-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(233, 30, 99, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.ring-image:hover img {
+    transform: scale(1.05);
+}
+
+.ring-sparkle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    animation: sparkle 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+.ring-details h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ring-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.spec-item:hover {
+    transform: translateY(-2px);
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #E91E63;
+}
+
+.spec-value {
+    color: #666;
+    font-style: italic;
+}
+
+.ring-meaning {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(233, 30, 99, 0.15);
+}
+
+.ring-meaning h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #E91E63;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.meaning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.meaning-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.05), rgba(255, 64, 129, 0.05));
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.meaning-item:hover {
+    transform: translateY(-5px);
+}
+
+.meaning-icon {
+    font-size: 2rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+.meaning-text h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.meaning-text p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Perfect Proposal Location Section */
+.proposal-location-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.location-intro {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.intro-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+}
+
+.location-options {
+    margin-bottom: 60px;
+}
+
+.primary-location {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(33, 150, 243, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.primary-location:hover {
+    transform: translateY(-10px);
+}
+
+.location-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.primary-location:hover .location-image img {
+    transform: scale(1.05);
+}
+
+.location-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2196F3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.location-content {
+    padding: 30px;
+}
+
+.location-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.location-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.location-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.location-why h5 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.location-why p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.location-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(33, 150, 243, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+}
+
+.location-planning {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(33, 150, 243, 0.1);
+}
+
+.location-planning h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #2196F3;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.planning-item {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.05), rgba(100, 181, 246, 0.05));
+    border-radius: 15px;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.planning-item:hover {
+    transform: translateY(-5px);
+}
+
+.planning-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.planning-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.planning-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Proposal Memories Section */
+.proposal-memories-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+}
+
+.memories-intro {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.memories-planning {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(156, 39, 176, 0.1);
+    margin-bottom: 60px;
+}
+
+.memories-planning h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #9C27B0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.capture-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.capture-item {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), rgba(186, 104, 200, 0.05));
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #9C27B0;
+}
+
+.capture-time {
+    min-width: 120px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #9C27B0;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.1);
+}
+
+.capture-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.capture-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.capture-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.capture-details span {
+    background: rgba(156, 39, 176, 0.1);
+    color: #9C27B0;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.memory-ideas {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(156, 39, 176, 0.1);
+    margin-bottom: 60px;
+}
+
+.memory-ideas h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #9C27B0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.idea-card {
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), rgba(186, 104, 200, 0.05));
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.idea-card:hover {
+    transform: translateY(-10px);
+}
+
+.idea-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.idea-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.idea-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.memory-preservation {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(156, 39, 176, 0.1);
+}
+
+.memory-preservation h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #9C27B0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.preservation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.preservation-item {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), rgba(186, 104, 200, 0.05));
+    border-radius: 15px;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.preservation-item:hover {
+    transform: translateY(-5px);
+}
+
+.preservation-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.preservation-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.preservation-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Proposal Story Section */
+.proposal-story-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.story-intro {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.proposal-timeline {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 152, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.proposal-timeline h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #FF9800;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.step-item {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.05), rgba(255, 193, 7, 0.05));
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #FF9800;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+}
+
+.special-step {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 193, 7, 0.1));
+    border-left: 4px solid #FF5722;
+}
+
+.step-number {
+    min-width: 80px;
+    height: 80px;
+    background: #FF9800;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.special-step .step-number {
+    background: #FF5722;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.step-time {
+    color: #FF9800;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.step-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.step-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.step-details span {
+    background: rgba(255, 152, 0, 0.1);
+    color: #FF9800;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.proposal-backup {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 152, 0, 0.1);
+}
+
+.proposal-backup h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #FF9800;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.backup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.backup-item {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.05), rgba(255, 193, 7, 0.05));
+    border-radius: 15px;
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.backup-item:hover {
+    transform: translateY(-5px);
+}
+
+.backup-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.backup-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.backup-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design for New Proposal Sections */
+@media (max-width: 768px) {
+    .ring-display {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .location-grid,
+    .ideas-grid,
+    .preservation-grid,
+    .planning-grid,
+    .backup-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .primary-location {
+        margin-bottom: 30px;
+    }
+    
+    .capture-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    
+    .capture-time {
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .step-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .step-details {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ring-image img {
+        height: 300px;
+    }
+    
+    .location-image {
+        height: 200px;
+    }
+    
+    .meaning-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .location-features {
+        justify-content: center;
+    }
+    
+    .capture-details,
+    .step-details {
+        justify-content: center;
+    }
+}

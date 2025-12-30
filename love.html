@@ -34,11 +34,9 @@
                 <li><a href="proposal.html" class="nav-link">Proposal</a></li>
                 <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span>☰</span>
+            </button>
         </div>
     </nav>
 
@@ -199,6 +197,453 @@
         </div>
     </section>
 
+    <!-- Love Letters & Messages Section -->
+    <section class="love-letters-messages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💬 Words From My Heart</h2>
+                <p class="section-description">The messages, letters, and words that express the depth of my love for you</p>
+            </div>
+            
+            <div class="letters-showcase">
+                <div class="message-categories">
+                    <div class="category-tabs">
+                        <button class="tab-btn active" onclick="showMessages('daily')">Daily Messages</button>
+                        <button class="tab-btn" onclick="showMessages('special')">Special Moments</button>
+                        <button class="tab-btn" onclick="showMessages('love')">Love Confessions</button>
+                    </div>
+                </div>
+                
+                <div class="messages-content">
+                    <div class="message-category active" id="daily">
+                        <div class="message-card">
+                            <div class="message-header">
+                                <div class="message-time">🌅 Morning</div>
+                                <div class="message-date">Every Day</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"Good Morning my beautiful Suzii 💕</p>
+                                <p>Waking up and thinking of you makes every day perfect. Your smile is going to light up my world today like it does every day. Have an amazing day, my love!"</p>
+                                <div class="message-signature">- Your Suhii</div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-card">
+                            <div class="message-header">
+                                <div class="message-time">🌙 Night</div>
+                                <div class="message-date">Every Night</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"Good Night my love 🌹</p>
+                                <p>Another day gone, but my love for you grows stronger. Sleep peacefully knowing someone loves you more than words can express. Sweet dreams, my Suzii."</p>
+                                <div class="message-signature">- Forever yours</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message-category" id="special">
+                        <div class="message-card special-message">
+                            <div class="message-header">
+                                <div class="message-time">💝 First I Love You</div>
+                                <div class="message-date">Our Special Day</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"Suzii, I need to tell you something...</p>
+                                <p>I love you. Not just the way friends love each other, but the way the moon loves the night, the way the stars love the sky. You've become my everything, my reason to smile, my dream come true."</p>
+                                <div class="message-signature">- Completely yours ❤️</div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-card">
+                            <div class="message-header">
+                                <div class="message-time">🎯 When I Knew</div>
+                                <div class="message-date">December 28, 2024</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"Suzii, today I realized something...</p>
+                                <p>You're not just someone I like talking to. You're someone I can't imagine my life without. Every moment with you feels like coming home. You're my person."</p>
+                                <div class="message-signature">- Your forever</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message-category" id="love">
+                        <div class="message-card">
+                            <div class="message-header">
+                                <div class="message-time">❤️ Why I Love You</div>
+                                <div class="message-date">Every Moment</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"My dearest Suzii,</p>
+                                <p>I love the way you say my name, the way you laugh, the way you care. I love your intelligence, your kindness, your beautiful soul. Most of all, I love how you make me feel - complete, cherished, and the luckiest person alive.</p>
+                                <div class="message-signature">- All my love</div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-card">
+                            <div class="message-header">
+                                <div class="message-time">🌟 Forever Promise</div>
+                                <div class="message-date">Always</div>
+                            </div>
+                            <div class="message-body">
+                                <p>"My Suzii,</p>
+                                <p>I promise to love you through every storm, to cherish you in every moment, to support you in every dream. You're not just my love, you're my life's greatest blessing. Forever and always."</p>
+                                <div class="message-signature">- Your eternal love</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Languages Section -->
+    <section class="love-languages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎯 How We Express Love</h2>
+                <p class="section-description">The unique ways we communicate our hearts to each other</p>
+            </div>
+            
+            <div class="languages-intro">
+                <div class="intro-card">
+                    <h3>Our Love Language Connection</h3>
+                    <p>Love isn't just spoken - it's felt, shown, and understood in the language our hearts speak. Here's how we express our deepest emotions to each other.</p>
+                </div>
+            </div>
+            
+            <div class="languages-grid">
+                <div class="language-card primary-language">
+                    <div class="language-icon">🗣️</div>
+                    <h4>Words of Affirmation</h4>
+                    <p class="language-description">Our primary way of expressing love through beautiful words, compliments, and heartfelt messages that make each other feel cherished.</p>
+                    <div class="language-examples">
+                        <span>"I love you more each day"</span>
+                        <span>"You're amazing"</span>
+                        <span>"You make my world better"</span>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-icon">⏰</div>
+                    <h4>Quality Time</h4>
+                    <p class="language-description">Those late-night calls, long conversations, and moments where nothing else matters but being together.</p>
+                    <div class="language-examples">
+                        <span>2-hour phone calls</span>
+                        <span>Late night talks</span>
+                        <span>Morning check-ins</span>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-icon">📱</div>
+                    <h4>Digital Connection</h4>
+                    <p class="language-description">Our modern way of staying connected through texts, voice notes, and constant communication.</p>
+                    <div class="language-examples">
+                        <span>Good morning texts</span>
+                        <span>Voice messages</span>
+                        <span>Sharing our day</span>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-icon">💭</div>
+                    <h4>Deep Conversations</h4>
+                    <p class="language-description">Sharing dreams, fears, and vulnerabilities that create the deepest emotional bond.</p>
+                    <div class="language-examples">
+                        <span>Future planning</span>
+                        <span>Personal stories</span>
+                        <span>Emotional support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="love-compatibility">
+                <h3>Our Love Compatibility</h3>
+                <div class="compatibility-meter">
+                    <div class="meter-item">
+                        <span class="meter-label">Communication</span>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 95%"></div>
+                        </div>
+                        <span class="meter-percentage">95%</span>
+                    </div>
+                    <div class="meter-item">
+                        <span class="meter-label">Emotional Connection</span>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="meter-percentage">100%</span>
+                    </div>
+                    <div class="meter-item">
+                        <span class="meter-label">Understanding</span>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="meter-percentage">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect Match Section -->
+    <section class="perfect-match-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🌹 Why We're Perfect Together</h2>
+                <p class="section-description">The beautiful ways we complement each other and create our perfect love story</p>
+            </div>
+            
+            <div class="match-intro">
+                <div class="intro-quote">
+                    <p>"We don't complete each other because we're already whole. We complement each other because together, we're more beautiful than apart."</p>
+                </div>
+            </div>
+            
+            <div class="match-comparison">
+                <div class="match-side">
+                    <h3>🌸 Her Qualities</h3>
+                    <div class="qualities-list">
+                        <div class="quality-item">
+                            <div class="quality-icon">😊</div>
+                            <div class="quality-text">
+                                <h4>Beautiful Smile</h4>
+                                <p>Lights up my world and makes everything better</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">🎵</div>
+                            <div class="quality-text">
+                                <h4>Melodious Voice</h4>
+                                <p>Music to my ears and poetry to my soul</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">🧠</div>
+                            <div class="quality-text">
+                                <h4>Intelligent Mind</h4>
+                                <p>Challenges me to be better and think deeper</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">💕</div>
+                            <div class="quality-text">
+                                <h4>Kind Heart</h4>
+                                <p>Compassionate, caring, and genuinely good</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-center">
+                    <div class="heart-symbol">❤️</div>
+                    <div class="match-text">Perfect Match</div>
+                </div>
+                
+                <div class="match-side">
+                    <h3>🌟 My Qualities</h3>
+                    <div class="qualities-list">
+                        <div class="quality-item">
+                            <div class="quality-icon">💝</div>
+                            <div class="quality-text">
+                                <h4>Loving Heart</h4>
+                                <p>Completely devoted and deeply caring</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">👂</div>
+                            <div class="quality-text">
+                                <h4>Good Listener</h4>
+                                <p>I hear not just her words, but her heart</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">🎯</div>
+                            <div class="quality-text">
+                                <h4>Supportive Nature</h4>
+                                <p>Her biggest cheerleader and supporter</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">✨</div>
+                            <div class="quality-text">
+                                <h4>Committed Soul</h4>
+                                <p>Completely dedicated to our love</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="compatibility-traits">
+                <h3>How We Balance Each Other</h3>
+                <div class="traits-grid">
+                    <div class="trait-card">
+                        <div class="trait-icons">
+                            <span>🌙</span>
+                            <span>☀️</span>
+                        </div>
+                        <h4>Night & Day</h4>
+                        <p>Her calm presence balances my energetic nature</p>
+                    </div>
+                    
+                    <div class="trait-card">
+                        <div class="trait-icons">
+                            <span>📚</span>
+                            <span>💭</span>
+                        </div>
+                        <h4>Mind & Heart</h4>
+                        <p>Her intelligence complements my emotional depth</p>
+                    </div>
+                    
+                    <div class="trait-card">
+                        <div class="trait-icons">
+                            <span>🎭</span>
+                            <span>😊</span>
+                        </div>
+                        <h4>Serious & Playful</h4>
+                        <p>We know when to be deep and when to laugh</p>
+                    </div>
+                    
+                    <div class="trait-card">
+                        <div class="trait-icons">
+                            <span>🌱</span>
+                            <span>🌳</span>
+                        </div>
+                        <h4>Growing Together</h4>
+                        <p>We help each other become better versions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Little Things Section -->
+    <section class="little-things-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🌟 The Magic in Details</h2>
+                <p class="section-description">The small, everyday moments that make our love extraordinary</p>
+            </div>
+            
+            <div class="little-things-intro">
+                <div class="intro-card">
+                    <h3>It's the Little Things</h3>
+                    <p>Big gestures are nice, but it's the small, consistent acts of love that build the strongest relationships. These are the little things about you that I cherish most.</p>
+                </div>
+            </div>
+            
+            <div class="things-grid">
+                <div class="thing-card">
+                    <div class="thing-icon">📱</div>
+                    <h4>The Way You Text</h4>
+                    <p>Your typing speed, the emojis you choose, the way you always reply with care - even your "battery was dead" excuse was adorable.</p>
+                    <div class="thing-feeling">💝 Adorable</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">😊</div>
+                    <h4>Your Voice When Happy</h4>
+                    <p>I can hear the smile in your voice, and it's the most beautiful sound in the world. It changes my entire mood instantly.</p>
+                    <div class="thing-feeling">✨ Magical</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🌙</div>
+                    <h4>Late Night "Wait Sometime"</h4>
+                    <p>When you say "wait sometime" during calls, I wait patiently because I know you'll come back. That trust means everything.</p>
+                    <div class="thing-feeling">🌹 Trusting</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🎭</div>
+                    <h4>Our Inside Jokes</h4>
+                    <p>Those little references only we understand, creating our secret world of shared humor and understanding.</p>
+                    <div class="thing-feeling">🎉 Special</div>
+                </div>
+                
+                <div class="thing-card special-thing">
+                    <div class="thing-icon">🌟</div>
+                    <h4>How You Say "Suhii"</h4>
+                    <p>The way you say my nickname - it's different, special, and makes me feel completely cherished and seen.</p>
+                    <div class="thing-feeling">❤️ Cherished</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">💭</div>
+                    <h4>Your Thoughtful Questions</h4>
+                    <p>You always ask about my day, my feelings, my dreams. You care about the details of my life.</p>
+                    <div class="thing-feeling">🌸 Caring</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">⏰</div>
+                    <h4>Morning Check-ins</h4>
+                    <p>How you make sure I'm okay, how you start my day with love and end it with care.</p>
+                    <div class="thing-feeling">🌅 Consistent</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🎯</div>
+                    <h4>Your Memory</h4>
+                    <p>You remember small things I've said, showing that you truly listen and value our conversations.</p>
+                    <div class="thing-feeling">📚 Valued</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🌈</div>
+                    <h4>Your Positive Energy</h4>
+                    <p>Even through text, I can feel your positive vibe and calm energy that makes everything feel okay.</p>
+                    <div class="thing-feeling">🌞 Uplifting</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">💕</div>
+                    <h4>Random "I Love You"s</h4>
+                    <p>When you say it unexpectedly, making my heart skip a beat and reminding me how real this is.</p>
+                    <div class="thing-feeling">💖 Surprising</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🤝</div>
+                    <h4>Your Support</h4>
+                    <p>How you support my dreams, encourage my goals, and believe in me even when I doubt myself.</p>
+                    <div class="thing-feeling">🌟 Empowering</div>
+                </div>
+                
+                <div class="thing-card">
+                    <div class="thing-icon">🎵</div>
+                    <h4>Your Laughter</h4>
+                    <p>The way you laugh at my jokes, even the silly ones, making me feel like the funniest person alive.</p>
+                    <div class="thing-feeling">😄 Joyful</div>
+                </div>
+            </div>
+            
+            <div class="daily-love-routine">
+                <h3>Our Daily Love Ritual</h3>
+                <div class="routine-timeline">
+                    <div class="routine-item">
+                        <div class="routine-time">🌅 Morning</div>
+                        <div class="routine-activity">Good morning texts that start the day with love</div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">☀️ Afternoon</div>
+                        <div class="routine-activity">Check-ins to see how the day is going</div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">🌆 Evening</div>
+                        <div class="routine-activity">Sharing our day's experiences and stories</div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">🌙 Night</div>
+                        <div class="routine-activity">Late night talks and good night wishes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -229,6 +674,66 @@
         document.getElementById('logoutBtn').addEventListener('click', function() {
             sessionStorage.removeItem('suzii_login_ok');
             window.location.href = 'login.html';
+        });
+
+        // Message tabs functionality
+        function showMessages(category) {
+            // Hide all message categories
+            const allCategories = document.querySelectorAll('.message-category');
+            allCategories.forEach(cat => cat.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const allButtons = document.querySelectorAll('.tab-btn');
+            allButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected category
+            const selectedCategory = document.getElementById(category);
+            if (selectedCategory) {
+                selectedCategory.classList.add('active');
+            }
+            
+            // Add active class to clicked button
+            const activeButton = event.target;
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
         });
     </script>
 </body>
