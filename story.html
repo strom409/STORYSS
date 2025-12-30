@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Suzii & Suhii</title>
+    <link rel="stylesheet" href="new-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('suzii_login_ok') !== '1') {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">💕</span>
+                <div>
+                    <div class="logo-text">Suzii & Suhii</div>
+                    <div class="logo-tagline">Our Love Story</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="story.html" class="nav-link active">Story</a></li>
+                <li><a href="love.html" class="nav-link">Love</a></li>
+                <li><a href="proposal.html" class="nav-link">Proposal</a></li>
+                <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Story Hero Section -->
+    <section class="story-hero-section">
+        <div class="container">
+            <div class="story-hero-content">
+                <h1 class="story-hero-title">Our Story</h1>
+                <p class="story-hero-subtitle">A journey that began with a simple "hello" and became the most beautiful chapter of our lives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Timeline -->
+    <section class="story-timeline-section">
+        <div class="container">
+            <div class="timeline-container">
+                <!-- Where We Met -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=350&fit=crop" alt="Instagram Connection" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>Where We Met</h3>
+                        <p>We met on Instagram. I added randomly a girl named <strong>Suzain</strong>, and after that I started talking to her. A random Instagram add that changed everything... The moment two souls connected in the digital world. Little did I know that this simple action would lead to the most beautiful chapter of my life.</p>
+                        <p>From that first message, I knew there was something special about her. The way she responded, the way she made me feel - it was different from anyone else. She wasn't just another person I met online, she was the person I was meant to find.</p>
+                        <div class="timeline-date">December 2024</div>
+                    </div>
+                </div>
+
+                <!-- The Last 3 Days -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=350&fit=crop" alt="Chatting Days" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>The Last 3 Days</h3>
+                        <p>In the last 3 days, our chats felt special. Her nickname is <strong>Suzii</strong> and my nickname is <strong>Suhii</strong>. Every conversation brought us closer, every message made the connection stronger. Those three days changed everything.</p>
+                        <p>We went from strangers to something more, something beautiful, something that felt like home. Every message brought us closer, every conversation deepened our bond. We shared our dreams, our fears, our hopes.</p>
+                        <div class="timeline-date">December 25-27, 2024</div>
+                    </div>
+                </div>
+
+                <!-- First Call Attempt -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&h=350&fit=crop" alt="First Call" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>First Call Attempt</h3>
+                        <p>Late night courage led me to call you for the first time on December 26th at 11:30 PM. Though you were muted, your chat reply made everything special. That moment felt like the beginning of something beautiful.</p>
+                        <p>I called with courage, with hope, with a heart full of anticipation. Even though you were muted, the fact that you responded through chat made me feel so happy. It was the first step towards hearing your voice.</p>
+                        <div class="timeline-date">December 26, 2024 - 11:30 PM</div>
+                    </div>
+                </div>
+
+                <!-- Her Voice, My World -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500&h=350&fit=crop" alt="Her Voice" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>Her Voice, My World</h3>
+                        <p>You called me back on December 27th at 3:30 PM, and for 20 minutes, your voice was everything I imagined and more. Your smile in those words, the way you talked—pure magic. Even though I was busy, every second counted.</p>
+                        <p>Your voice became the melody I hum in my dreams. When I finally heard you speak, everything changed. Your voice wasn't just sound - it was the melody my heart had been waiting for. I could listen to you forever.</p>
+                        <div class="timeline-date">December 27, 2024 - 3:30 PM</div>
+                    </div>
+                </div>
+
+                <!-- Two Hours of Heaven -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1518568408610-0f7d1e7f0b8e?w=500&h=350&fit=crop" alt="Long Conversation" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>Two Hours of Heaven</h3>
+                        <p>We talked for almost 2 hours on December 27th at 10:00 PM—time stood still. Your laughter, your stories, your dreams—I wanted to listen forever. When you said "wait sometime," I waited, believing you'd return.</p>
+                        <p>Two hours felt like seconds. Our first long conversation was everything I had dreamed of and more. Time stood still when we were talking. Every word you said, every laugh that escaped your lips, every moment of silence - they all meant something.</p>
+                        <div class="timeline-date">December 27, 2024 - 10:00 PM</div>
+                    </div>
+                </div>
+
+                <!-- Waiting Until 3 AM -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">06</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=350&fit=crop" alt="Waiting" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>Waiting with Hope</h3>
+                        <p>I waited until 3 AM, hoping you'd come back. Every notification sound made my heart jump. Finally, I slept with dreams of your voice. Hope kept me awake. Waiting for your messages became the sweetest insomnia.</p>
+                        <p>Every notification felt like a promise of something beautiful. I stayed awake, hoping you'd return, hoping to hear your voice again, hoping to continue our beautiful conversation.</p>
+                        <div class="timeline-date">Until 3:00 AM</div>
+                    </div>
+                </div>
+
+                <!-- Morning Message -->
+                <div class="timeline-item scroll-fade">
+                    <div class="timeline-number">07</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=350&fit=crop" alt="Morning Message" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop'">
+                        </div>
+                        <h3>Morning Message</h3>
+                        <p>"My battery was dead"—your text came like sunshine after a long night on December 28th at 10:30 AM. Suddenly, everything made sense. Sometimes life interrupts, but true connections always find their way back.</p>
+                        <p>A message that felt like sunshine. Your explanation brought relief and your care made me feel special. Simple words, profound meaning. You came back, and that's all that mattered.</p>
+                        <div class="timeline-date">December 28, 2024 - 10:30 AM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Romantic Talk -->
+    <section class="romantic-talk-section">
+        <div class="container">
+            <div class="romantic-talk-card">
+                <div class="romantic-talk-image">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop" alt="Romantic Talk" onerror="this.src='https://images.pexels.com/photos/1024989/pexels-photo-1024989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'">
+                </div>
+                <div class="romantic-talk-content">
+                    <h2>❤️ First Romantic Talk</h2>
+                    <p>That first romantic talk on call…</p>
+                    <p class="romantic-highlight">It felt real.</p>
+                    <p class="romantic-highlight">I felt happy.</p>
+                    <p class="romantic-highlight">I felt peaceful.</p>
+                    <p>For the first time, I knew — this feeling is special.</p>
+                    <p>It wasn't just conversation anymore. It was connection. It wasn't just words anymore. It was emotions. It wasn't just two people talking anymore. It was two souls meeting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Suzii & Suhii</h3>
+                    <p class="footer-quote">"Every love story is beautiful, but ours is my favorite"</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="story.html">Story</a>
+                    <a href="love.html">Love</a>
+                    <a href="proposal.html">Proposal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>"Made with ❤️ for Suzain (Suzii)"</p>
+                <p>"A love letter in code — Suhii"</p>
+                <p class="footer-copyright">© 2024 Our Love Story. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            sessionStorage.removeItem('suzii_login_ok');
+            window.location.href = 'login.html';
+        });
+
+        // Scroll fade animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

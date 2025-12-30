@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzii & Suhii - Our Love Story</title>
+    <link rel="stylesheet" href="new-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('suzii_login_ok') !== '1') {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">💕</span>
+                <div>
+                    <div class="logo-text">Suzii & Suhii</div>
+                    <div class="logo-tagline">Our Love Story</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="story.html" class="nav-link">Story</a></li>
+                <li><a href="love.html" class="nav-link">Love</a></li>
+                <li><a href="proposal.html" class="nav-link">Proposal</a></li>
+                <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-main">
+                <h1 class="hero-title">Suzii & Suhii</h1>
+                <p class="hero-subtitle">A Love Story Written in the Stars</p>
+                <p class="hero-quote">"Some people arrive like a simple 'hello'… and become a whole feeling."</p>
+                <div class="hero-description">
+                    <p>From a random Instagram add to heartfelt conversations, this is the story of two souls who found comfort, happiness, and meaning in each other. Every message, every call, every smile has been a chapter in our beautiful journey together. What started as a simple connection has grown into something beautiful, something real, something that makes every day worth living.</p>
+                    <p>We found each other in the most unexpected way, and now I can't imagine my life without her. She's not just my love, she's my best friend, my confidant, my everything. This is our story, and it's just beginning.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2024</div>
+                        <div class="stat-label">Our Year</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Forever</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">💕</div>
+                        <div class="stat-label">Together</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=700&fit=crop" alt="Suzii & Suhii" onerror="this.src='https://via.placeholder.com/600x700/E91E63/FFFFFF?text=Suzii+%26+Suhii'">
+                    <div class="image-overlay-text">"Hello bchaa" — our beginning</div>
+                </div>
+                <div class="hero-couple-images">
+                    <div class="couple-mini-image">
+                        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=200&h=200&fit=crop" alt="Couple" onerror="this.src='https://via.placeholder.com/200x200/9C27B0/FFFFFF?text=Us'">
+                    </div>
+                    <div class="couple-mini-image">
+                        <img src="https://images.unsplash.com/photo-1518568408610-0f7d1e7f0b8e?w=200&h=200&fit=crop" alt="Together" onerror="this.src='https://via.placeholder.com/200x200/FF4081/FFFFFF?text=Love'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Timeline -->
+    <section class="story-timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Beautiful Journey</h2>
+                <p class="section-description">Every moment has been a treasure, every conversation a memory we'll cherish forever. Our story is still being written, and each day brings new chapters filled with love, laughter, and beautiful moments together.</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500&h=350&fit=crop" alt="Instagram" onerror="this.src='https://via.placeholder.com/500x350/E91E63/FFFFFF?text=Where+We+Met'">
+                        </div>
+                        <h3>Where We Met</h3>
+                        <p>We met on Instagram. I added randomly a girl named <strong>Suzain</strong>, and after that I started talking to her. A random Instagram add that changed everything... The moment two souls connected in the digital world. Little did I know that this simple action would lead to the most beautiful chapter of my life. It was fate, it was destiny, it was meant to be.</p>
+                        <p>From that first message, I knew there was something special about her. The way she responded, the way she made me feel - it was different from anyone else. She wasn't just another person I met online, she was the person I was meant to find.</p>
+                        <div class="timeline-date">December 2024</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=350&fit=crop" alt="First Call" onerror="this.src='https://via.placeholder.com/500x350/9C27B0/FFFFFF?text=First+Voice'">
+                        </div>
+                        <h3>First Voice</h3>
+                        <p>Late night courage led me to call you for the first time. Your voice became the melody I hum in my dreams. The moment her voice became my world... When words turned into feelings that I never knew existed. That first call was magical - time stood still, and all that mattered was her voice, her laughter, her presence.</p>
+                        <p>We talked for hours, and it felt like minutes. Every word she said, every laugh that escaped her lips, every moment of silence - they all meant something. I knew then that this was different, this was real, this was love.</p>
+                        <div class="timeline-date">December 26, 2024 - 11:30 PM</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&h=350&fit=crop" alt="Connection" onerror="this.src='https://via.placeholder.com/500x350/FF4081/FFFFFF?text=Special+Connection'">
+                        </div>
+                        <h3>Special Connection</h3>
+                        <p>In the last 3 days, our chats felt special. Her nickname is <strong>Suzii</strong> and my nickname is <strong>Suhii</strong>. When I knew this feeling was special... The beginning of forever started with simple conversations. Those three days changed everything. We went from strangers to something more, something beautiful, something that felt like home.</p>
+                        <p>Every message brought us closer, every conversation deepened our bond. We shared our dreams, our fears, our hopes. We became each other's confidant, each other's support, each other's everything. Those three days were just the beginning of our forever.</p>
+                        <div class="timeline-date">December 27-28, 2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Suzii & Suhii</h3>
+                    <p class="footer-quote">"Every love story is beautiful, but ours is my favorite"</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="story.html">Story</a>
+                    <a href="love.html">Love</a>
+                    <a href="proposal.html">Proposal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>"Made with ❤️ for Suzain (Suzii)"</p>
+                <p>"A love letter in code — Suhii"</p>
+                <p class="footer-copyright">© 2024 Our Love Story. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            sessionStorage.removeItem('suzii_login_ok');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
